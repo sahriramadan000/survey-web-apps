@@ -30,7 +30,7 @@
             <p class="fw-light">Thank you for taking the time to participate! Your feedback is incredibly valuable in helping us improve and innovate our products.</p>
             <div class="main_nav d-block position-relative bg-transparent border-0 right-0" style="right: 0; top:20px !important;">
                 <div class="nav nav-tabs bg-transparent border-0">
-                    <a href="#tab_1" data-bs-toggle="tab" class="btn neon-button">Let's Start</a>
+                    <a href="#tab_1" id="menu-button-mobile2" data-bs-toggle="tab" class="btn neon-button start-survey">Let's Start</a>
                 </div>
             </div>
         </div>

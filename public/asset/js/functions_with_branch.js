@@ -42,11 +42,11 @@
 			$Main_nav.show();
 		}
 	});
-	
+
 	/* Scroll to top small screens: chanhe the top position offset based on your content*/
 	var $Scrolbt = $('button.backward,button.forward');
 	var $Element = $('.wrapper_in');
-	
+
 	if( window.innerWidth < 800 ) {
 	$Scrolbt.on("click", function (){
   		$Element.animate({ scrollTop: 500 }, "slow");
@@ -160,7 +160,7 @@
 			}
 		});
 	});
-	
+
 	$("#wizard_container").wizard({
 					unidirectional: false,
 					beforeBackward: function( event, state ) {
@@ -185,10 +185,14 @@
 		checkboxClass: 'icheckbox_square-yellow',
 		radioClass: 'iradio_square-yellow'
 	});
+	$('input.icheck2').iCheck({
+		checkboxClass: 'icheckbox_square-yellow2',
+		radioClass: 'iradio_square-yellow2'
+	});
 
 })(window.jQuery); // JavaScript Document
 
-	
+
 	jQuery(document).ready(function(){
     // This button will increment the value
     $('.qtyplus').click(function(e){

@@ -7,7 +7,7 @@
 	var $Mc = $('#main_container');
 	var $Btn_m = $('#menu-button-mobile');
 	var $Tabs_c = $('.main_nav .nav-tabs a');
-	
+
 	$Tabs_c.on('click', function (e) {
 		var href = $(this).attr('href');
 		$('.wrapper_in').animate({
@@ -32,11 +32,11 @@
 			$Main_nav.show();
 		}
 	});
-	
+
 	/* Scroll to top small screens: chanhe the top position offset based on your content*/
 	var $Scrolbt = $('button.backward,button.forward');
 	var $Element = $('.wrapper_in');
-	
+
 	if( window.innerWidth < 800 ) {
 		$Scrolbt.on("click", function (){
   		$Element.animate({ scrollTop: 500 }, "slow");
@@ -155,6 +155,10 @@
 	$('input.icheck').iCheck({
 		checkboxClass: 'icheckbox_square-yellow',
 		radioClass: 'iradio_square-yellow'
+	});
+	$('input.icheck2').iCheck({
+		checkboxClass: 'icheckbox_square-yellow2',
+		radioClass: 'iradio_square-yellow2'
 	});
 
 })(window.jQuery); // JavaScript Document

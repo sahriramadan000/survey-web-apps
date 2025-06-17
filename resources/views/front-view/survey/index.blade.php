@@ -1,12 +1,70 @@
 @extends('front-view.layouts.app')
 
-@section('style')
+@push('styles')
 
-@endsection
+<style>
+
+ .toggle-wrapper {
+  position: relative;
+  width: 110px;
+  height: 40px;
+  background: #f0f0f3;
+  border-radius: 40px;
+  box-shadow: inset 4px 4px 6px #ccc, inset -4px -4px 6px #fff;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.toggle-indicator {
+  position: absolute;
+  width: 48px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  top: 4px;
+  left: 4px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px #bbb, -2px -2px 4px #fff;
+}
+
+.toggle-wrapper.active .toggle-indicator {
+  left: 58px;
+}
+
+.toggle-labels {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 1;
+}
+
+.toggle-labels span {
+  font-weight: bold;
+  font-size: 12px;
+  color: #555;
+}
+
+.toggle-indicator img {
+  width: 18px;
+  height: 18px;
+}
+
+.toggle-indicator small {
+  font-size: 10px;
+  margin-left: 4px;
+}
+</style>
+@endpush
 
 @section('content')
 <div id="header_in">
-    <a href="#0" class="close_in "><i class="pe-7s-close-circle"></i></a>
+    <a href="#0" class="close_in"><i class="pe-7s-close-circle"></i></a>
 </div>
 
 <div class="wrapper_in">
@@ -16,13 +74,8 @@
                 <div class="subheader" id="quote"></div>
                 <div class="row">
                     <aside class="col-xl-3 col-lg-4">
-                        <h2>Request a Quote and Compare prices!</h2>
-                        <p class="lead">An mei sadipscing dissentiet, eos ea partem viderer facilisi.</p>
-                        <ul class="list_ok">
-                            <li>Delicata persecuti ei nec, et his minim omnium, aperiam placerat ea vis.</li>
-                            <li>Suavitate vituperatoribus pro ad, cum in quis propriae abhorreant.</li>
-                            <li>Aperiri deterruisset ei mea, sed cu laudem intellegat, eu mutat iuvaret voluptatum mei.</li>
-                        </ul>
+                        <h2>Yuk, Pilih Desain Baju Favoritmu!</h2>
+                        <p class="lead">Berikan kami preferensi desain Anda, dan kami akan bantu wujudkan dengan harga terbaik.</p>
                     </aside><!-- /aside -->
 
                     <div class="col-xl-9 col-lg-8">
@@ -36,120 +89,215 @@
                                 <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                 <div id="middle-wizard">
                                     <div class="step">
-                                        <h3 class="main_question"><strong>1/4</strong>What is your budget?</h3>
+                                        <h3 class="main_question"><strong>1/4</strong>Data Diri</h3>
 
-                                        <div class="form-group radio_questions">
-                                            <label>1. My budget is under $500
-                                                <input name="question_1" type="radio" value="My budget is under $500" class="icheck required">
-                                            </label>
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Tuliskan nama kamu">
                                         </div>
-                                        <div class="form-group radio_questions">
-                                            <label>2. My budget is between $500 and $1000
-                                                <input name="question_1" type="radio" value="My budget is between $500 and $1000" class="icheck required">
-                                            </label>
+                                       <div class="form-group">
+                                            <select name="year" class="form-control">
+                                                <option value="">Pilih tahun lahir anda</option>
+                                                <?php
+                                                    for ($year = 1970; $year <= 2025; $year++) {
+                                                        echo "<option value=\"$year\">$year</option>";
+                                                    }
+                                                ?>
+                                            </select>
                                         </div>
-                                        <div class="form-group radio_questions">
-                                            <label>3. My budget is between $1000 and $1500
-                                                <input name="question_1" type="radio" value="My budget is between $1000 and $1500" class="icheck required">
-                                            </label>
-                                        </div>
-                                        <div class="form-group radio_questions">
-                                            <label>4. My budget is over $1500
-                                                <input name="question_1" type="radio" value="My budget is over $1500" class="icheck required">
-                                            </label>
-                                        </div>
-
                                     </div><!-- /step 1-->
 
                                     <div class="step">
-                                        <h3 class="main_question"><strong>2/4</strong>What your poject need?</h3>
+                                        <h3 class="main_question"><strong>2/4</strong>Jenis Baju</h3>
 
-                                        <div class="row add_bottom_30">
-
-                                            <div class="col-sm-6">
-                                                <div class="form-group checkbox_questions">
+                                        <div class="row">
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
                                                     <label>
-                                                        <input name="question_2[]" type="checkbox" value="Custom interface and layout" class="icheck required">Custom interface and layout
-                                                    </label>
-                                                </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label>
-                                                        <input name="question_2[]" type="checkbox" value="Web site design" class="icheck required">Web site design
-                                                    </label>
-                                                </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label>
-                                                        <input name="question_2[]" type="checkbox" value="Seo optimization" class="icheck required">Seo optimization
+                                                        <img src="{{ asset('asset/jenis-1.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
                                             </div>
-
-                                            <div class="col-sm-6">
-                                                <div class="form-group checkbox_questions">
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
                                                     <label>
-                                                        <input name="question_2[]" type="checkbox" value="CMS integrations (Wordpress)" class="icheck required">CMS integrations (Wordpress)
+                                                        <img src="{{ asset('asset/jenis-2.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label>
-                                                        <input name="question_2[]" type="checkbox" value="Domain registration" class="icheck required">Domain registration
-                                                    </label>
-                                                </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label>
-                                                        <input name="question_2[]" type="checkbox" value="Hosting plan" class="icheck required">Hosting plan
-                                                    </label>
-                                                </div>
-
                                             </div>
-                                        </div><!-- /row-->
-                                        <div class="form-group textarea_info">
-                                            <label>Additional info</label>
-                                            <textarea name="addtional_info" class="form-control" style="height:150px;" placeholder="How many pages, other details, etc..."></textarea>
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
+                                                    <label>
+                                                        <img src="{{ asset('asset/jenis-3.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr>
+
+                                        <h3 class="main_question">Size Baju</h3>
+                                        <div class="row">
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-group radio_questions">
+                                                    <label class="p-3">
+                                                        Size M
+                                                        <input name="question_2" type="radio" value="L" class="icheck2 required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-group radio_questions">
+                                                    <label class="p-3">
+                                                        Size L
+                                                        <input name="question_2" type="radio" value="L" class="icheck2 required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-group radio_questions">
+                                                    <label class="p-3">
+                                                        Size XL
+                                                        <input name="question_2" type="radio" value="L" class="icheck2 required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <div class="form-group radio_questions">
+                                                    <label class="p-3">
+                                                        Size XXL
+                                                        <input name="question_2" type="radio" value="L" class="icheck2 required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /step 1-->
+
+                                    <div class="step">
+                                        <h3 class="main_question"><strong>3/4</strong>Pilih Kategori Desain</h3>
+
+                                         <div class="row justify-content-center">
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
+                                                    <label>
+                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
+                                                    <label>
+                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
+                                                    <label>
+                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
+                                                    <label>
+                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-4">
+                                                <div class="form-group radio_questions">
+                                                    <label>
+                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <input name="question_1" type="radio" value="Boxie" class="icheck required">
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div><!-- /step 2-->
 
                                     <div class="step">
-                                        <h3 class="main_question"><strong>3/4</strong>Please answer the following questions:</h3>
+                                        <h3 class="main_question"><strong>4/4</strong>Pilih Design Baju dari Category (Street Grit Aesthetic)</h3>
 
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img id="mainImage" src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-belakang-fix.png') }}" alt="" class="img-fluid mb-3">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-belakang-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Resurge</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Resurge">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                        <hr class="py-3">
                                         <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-belakang-fix.png') }}" alt="" class="img-fluid mb-3 mainImage">
 
-                                            <div class="col-lg-10">
-                                                <div class="form-group select">
-                                                    <label>If you already have an hosting plan, please define:</label>
-                                                    <div class="styled-select">
-                                                        <select class="required" name="select_1">
-                                                            <option value="" selected>Select</option>
-                                                            <option value="Unix/Linux + Mysql">Unix/Linux + Mysql</option>
-                                                            <option value="Windows + Sql">Windows + Sql</option>
-                                                            <option value="Other">Other</option>
-                                                        </select>
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-belakang-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
-                                                </div><!-- /select-->
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>No Mercy</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
 
-                                                <div class="form-group select">
-                                                    <label>If you need an hosting plan, please define which one:</label>
-                                                    <div class="styled-select">
-                                                        <select class="required" name="select_2">
-                                                            <option value="" selected>Select</option>
-                                                            <option value="Hosting Plan 1 year + Mysql database 500MB">1 year + Mysql database 500MB</option>
-                                                            <option value="Hosting Plan 2 year + Mysql database 500MB">2 year + Mysql database 500MB</option>
-                                                            <option value="Hosting Plan 2 year + Mysql database 1GB">2 year + Mysql database 1GB</option>
-                                                        </select>
-                                                    </div>
-                                                </div><!-- /select-->
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="No Mercy">
+                                                <input type="hidden" name="like_status" id="likeStatus">
 
-                                                <div class="form-group select">
-                                                    <label>If you need a newsletter campaign, please define the provider you prefer:</label>
-                                                    <div class="styled-select">
-                                                        <select class="required" name="select_3">
-                                                            <option value="" selected>Select</option>
-                                                            <option value="Mailchimp">Mailchimp</option>
-                                                            <option value="CampaignMonitor">CampaignMonitor</option>
-                                                            <option value="MailUp">MailUp</option>
-                                                        </select>
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
                                                     </div>
-                                                </div><!-- /select-->
+                                                </div>
                                             </div>
                                         </div><!-- /row-->
                                     </div><!-- /step 3-->
@@ -220,5 +368,33 @@
 
 @push('scripts')
 <script>
+   $(document).ready(function () {
+    // Untuk thumbnail image per produk
+    $('.thumb-image').on('click', function () {
+        const newSrc = $(this).attr('src');
+        // Cari parent yang paling dekat lalu update gambar utamanya
+        $(this).closest('.col-md-5').find('.img-fluid').attr('src', newSrc);
+    });
+
+    // Untuk toggle like/dislike per produk
+    $('.toggle-wrapper').on('click', function () {
+        const toggle = $(this);
+        const icon = toggle.find('img');
+        const textToggle = toggle.find('small');
+
+        toggle.toggleClass('active');
+
+        if (toggle.hasClass('active')) {
+            icon.attr('src', `{{ asset('asset/category/icon-dislike.png') }}`); // 👎
+            textToggle.text('Dislike');
+        } else {
+            icon.attr('src', `{{ asset('asset/category/icon-like.png') }}`); // 👍
+            textToggle.text('Like');
+        }
+
+        // Optional: Simpan status ke input hidden
+        toggle.closest('.col-md-7').find('input[name="like_status"]').val(toggle.hasClass('active') ? 'Dislike' : 'Like');
+    });
+});
 </script>
 @endpush

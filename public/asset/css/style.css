@@ -912,12 +912,12 @@ span.error:after {
 }
 .form-group.radio_questions label {
     border: 2px solid #e8ebed;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: 400;
-    padding: 15px 45px 15px 15px;
-    box-sizing: content-box;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    padding: 0;
+    box-sizing: border-box;
     border-radius: 5px;
     cursor: pointer;
     color: #555;
@@ -930,10 +930,18 @@ span.error:after {
 }
 .form-group.radio_questions .iradio_square-yellow {
     position: absolute;
-    top: 17px;
+    top: 15px;
     right: 15px;
 }
 .form-group.checkbox_questions .icheckbox_square-yellow {
+    margin-right: 10px;
+}
+.form-group.radio_questions .iradio_square-yellow2 {
+    position: absolute;
+    top: 19px;
+    left: 15px;
+}
+.form-group.checkbox_questions .icheckbox_square-yellow2 {
     margin-right: 10px;
 }
 .form-group.radio_questions label:hover {

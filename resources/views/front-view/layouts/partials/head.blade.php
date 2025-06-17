@@ -24,3 +24,4 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="{{ asset('asset/css/custom.css') }}" rel="stylesheet">
+@stack('styles')
