@@ -206,7 +206,7 @@
                                             <div class="col-6 col-md-4">
                                                 <div class="form-group radio_questions">
                                                     <label>
-                                                        <img src="{{ asset('asset/strategy/jenis-desain-5.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('asset/strategy/jenis-desain-4.png') }}" alt="" class="img-fluid">
                                                         <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
@@ -463,7 +463,7 @@
                                     </div><!-- /step 6-->
 
                                     <div class="step">
-                                        <h3 class="main_question"><strong>7/4</strong>Pilih Design Baju dari Category (-)</h3>
+                                        <h3 class="main_question"><strong>7/4</strong>Pilih Design Baju dari Category (Street Wear)</h3>
 
                                         <div class="row mb-3">
                                             <div class="col-12 col-md-5">
