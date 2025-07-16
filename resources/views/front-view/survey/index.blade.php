@@ -173,7 +173,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div><!-- /step 1-->
+                                    </div><!-- /step 2-->
 
                                     <div class="step">
                                         <h3 class="main_question"><strong>3/4</strong>Pilih Kategori Desain</h3>
@@ -182,7 +182,7 @@
                                             <div class="col-6 col-md-4">
                                                 <div class="form-group radio_questions">
                                                     <label>
-                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('asset/strategy/jenis-desain-1.png') }}" alt="" class="img-fluid">
                                                         <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
@@ -190,7 +190,7 @@
                                             <div class="col-6 col-md-4">
                                                 <div class="form-group radio_questions">
                                                     <label>
-                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('asset/strategy/jenis-desain-2.png') }}" alt="" class="img-fluid">
                                                         <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
@@ -198,7 +198,7 @@
                                             <div class="col-6 col-md-4">
                                                 <div class="form-group radio_questions">
                                                     <label>
-                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('asset/strategy/jenis-desain-3.png') }}" alt="" class="img-fluid">
                                                         <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
@@ -206,7 +206,7 @@
                                             <div class="col-6 col-md-4">
                                                 <div class="form-group radio_questions">
                                                     <label>
-                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('asset/strategy/jenis-desain-5.png') }}" alt="" class="img-fluid">
                                                         <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
@@ -214,13 +214,13 @@
                                             <div class="col-6 col-md-4">
                                                 <div class="form-group radio_questions">
                                                     <label>
-                                                        <img src="{{ asset('asset/jenis-design-1.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('asset/strategy/jenis-desain-5.png') }}" alt="" class="img-fluid">
                                                         <input name="question_1" type="radio" value="Boxie" class="icheck required">
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div><!-- /step 2-->
+                                    </div><!-- /step 3-->
 
                                     <div class="step">
                                         <h3 class="main_question"><strong>4/4</strong>Pilih Design Baju dari Category (Street Grit Aesthetic)</h3>
@@ -228,18 +228,18 @@
                                         <div class="row mb-3">
                                             <div class="col-12 col-md-5">
                                                 <!-- Main Image -->
-                                                <img id="mainImage" src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-belakang-fix.png') }}" alt="" class="img-fluid mb-3">
+                                                <img id="mainImage" src="{{ asset('asset/strategy/resurge-belakang-jenis-1.png') }}" alt="" class="img-fluid mb-3">
 
                                                 <!-- Thumbnails -->
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-belakang-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                        <img src="{{ asset('asset/strategy/resurge-belakang-jenis-1.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                        <img src="{{ asset('asset/strategy/resurge-depan-jenis-1.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-2-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                        <img src="{{ asset('asset/strategy/resurge-belakang-jenis-1.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -266,18 +266,18 @@
                                         <div class="row">
                                             <div class="col-12 col-md-5">
                                                 <!-- Main Image -->
-                                                <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-belakang-fix.png') }}" alt="" class="img-fluid mb-3 mainImage">
+                                                <img src="{{ asset('asset/strategy/nomercy-belakang-jenis-1.png') }}" alt="" class="img-fluid mb-3 mainImage">
 
                                                 <!-- Thumbnails -->
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-belakang-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                        <img src="{{ asset('asset/strategy/nomercy-belakang-jenis-1.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                        <img src="{{ asset('asset/strategy/nomercy-depan-jenis-1.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="{{ asset('asset/category/Street-grit-aesthetic/Main-Image-1-depan-fix.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                        <img src="{{ asset('asset/strategy/nomercy-depan-jenis-1.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -300,7 +300,327 @@
                                                 </div>
                                             </div>
                                         </div><!-- /row-->
-                                    </div><!-- /step 3-->
+                                    </div><!-- /step 4-->
+
+                                    <div class="step">
+                                        <h3 class="main_question"><strong>5/4</strong>Pilih Design Baju dari Category (Dark Art)</h3>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img id="mainImage" src="{{ asset('asset/strategy/flower-belakang-jenis-2.png') }}" alt="" class="img-fluid mb-3">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/flower-belakang-jenis-2.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/flower-depan-jenis-2.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/flower-belakang-jenis-2.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Flower</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="flower">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                        <hr class="py-3">
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img src="{{ asset('asset/strategy/gordon-belakang-jenis-2.png') }}" alt="" class="img-fluid mb-3 mainImage">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/gordon-belakang-jenis-2.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/gordon-belakang-jenis-2.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/gordon-belakang-jenis-2.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Gordon</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Gordon">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                    </div><!-- /step 5-->
+
+                                    <div class="step">
+                                        <h3 class="main_question"><strong>6/4</strong>Pilih Design Baju dari Category (Modern Myht)</h3>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img id="mainImage" src="{{ asset('asset/strategy/angel-belakang-jenis-3.png') }}" alt="" class="img-fluid mb-3">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/angel-belakang-jenis-3.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/angel-belakang-jenis-3.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/angel-belakang-jenis-3.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Angel</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Angel">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                        <hr class="py-3">
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img src="{{ asset('asset/strategy/nemesis-belakang-jenis-3.png') }}" alt="" class="img-fluid mb-3 mainImage">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/nemesis-belakang-jenis-3.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/nemesis-belakang-jenis-3.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/nemesis-belakang-jenis-3.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Nemesis</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Nemesis">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                    </div><!-- /step 6-->
+
+                                    <div class="step">
+                                        <h3 class="main_question"><strong>7/4</strong>Pilih Design Baju dari Category (-)</h3>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img id="mainImage" src="{{ asset('asset/strategy/make-money-belakang-jenis-4.png') }}" alt="" class="img-fluid mb-3">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/make-money-belakang-jenis-4.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/make-money-belakang-jenis-4.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/make-money-belakang-jenis-4.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Make Money</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Make Money">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                        <hr class="py-3">
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img src="{{ asset('asset/strategy/born-belakang-jenis-4.png') }}" alt="" class="img-fluid mb-3 mainImage">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/born-belakang-jenis-4.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/born-belakang-jenis-4.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/born-belakang-jenis-4.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Born To Die</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Born To Die">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                    </div><!-- /step 7-->
+
+                                    <div class="step">
+                                        <h3 class="main_question"><strong>8/4</strong>Pilih Design Baju dari Category (Asian Art Fusion)</h3>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img id="mainImage" src="{{ asset('asset/strategy/bloomrage-belakang-jenis-5.png') }}" alt="" class="img-fluid mb-3">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/bloomrage-belakang-jenis-5.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/bloomrage-depan-jenis-5.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/bloomrage-belakang-jenis-5.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Bloomrage</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Bloomrage">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                        <hr class="py-3">
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <!-- Main Image -->
+                                                <img src="{{ asset('asset/strategy/samurai-belakang-jenis-5.png') }}" alt="" class="img-fluid mb-3 mainImage">
+
+                                                <!-- Thumbnails -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/samurai-belakang-jenis-5.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/samurai-belakang-jenis-5.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <img src="{{ asset('asset/strategy/samurai-belakang-jenis-5.png') }}" alt="Thumb 1" class="img-thumbnail thumb-image" style="cursor: pointer;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Informasi Produk -->
+                                            <div class="col-12 col-md-7">
+                                                <h2 class="text-uppercase">Nama Artikel: <strong>Samurai</strong></h2>
+                                                <p class="mb-1">Deskripsi:</p>
+                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+
+                                                <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
+                                                <input type="hidden" name="article_name" value="Samurai">
+                                                <input type="hidden" name="like_status" id="likeStatus">
+
+                                                <div class="toggle-wrapper" id="likeToggle">
+                                                    <div class="toggle-indicator d-flex flex-column">
+                                                        <img id="toggleIcon" src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Like">
+                                                        <small id="textToggle">Like</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /row-->
+                                    </div><!-- /step 7-->
 
                                     <div class="submit step">
 
