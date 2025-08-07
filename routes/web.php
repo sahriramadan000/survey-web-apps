@@ -1,21 +1,8 @@
 <?php
 
-use App\Http\Controllers\ForgotPasswordController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\Auth\LoginNewController;
-use App\Http\Controllers\DahsboardController;
-use App\Http\Controllers\ProductCategoryController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\SettingController;
-use App\Models\Product;
-use App\Models\ProductCategory;
-use App\Models\Project;
-use App\Models\Service;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserSelectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +21,6 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('front-view.survey.index');
 })->name('home');
+
+Route::post('/user-selections', [UserSelectionController::class, 'store'])->name('user-selections.store');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
