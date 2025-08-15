@@ -181,7 +181,7 @@
                                                 <div class="form-group radio_questions">
                                                     <label>
                                                         <img src="{{ asset('asset/strategy/jenis-desain-1.png') }}" alt="" class="img-fluid">
-                                                        <input name="design_category" type="radio" value="Street Grit Aesthetic" class="icheck required">
+                                                        <input name="design_category" type="radio" value="Street Grit" class="icheck required">
                                                     </label>
                                                 </div>
                                             </div>
@@ -205,7 +205,7 @@
                                                 <div class="form-group radio_questions">
                                                     <label>
                                                         <img src="{{ asset('asset/strategy/jenis-desain-4.png') }}" alt="" class="img-fluid">
-                                                        <input name="design_category" type="radio" value="Street Wear" class="icheck required">
+                                                        <input name="design_category" type="radio" value="Quots Streetwear" class="icheck required">
                                                     </label>
                                                 </div>
                                             </div>
@@ -521,8 +521,8 @@
                                             <div class="col-12 col-md-7">
                                                 <h2 class="text-uppercase">Nama Artikel: <strong>Born To Die</strong></h2>
                                                 <p class="mb-1">Deskripsi:</p>
-                                                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima non odio animi laboriosam similique magni quo repudiandae, iusto dolorum natus rerum earum eligendi doloremque optio provident nemo pariatur culpa?</p>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit accusamus asperiores iusto laboriosam qui et. Distinctio molestiae incidunt optio, fugiat libero, quas cupiditate voluptatem, sapiente natus tempore odio laborum.</p>
+                                                <p class="mb-3">Buat lo yang nggak takut jalanin hidup dengan segala tantangannya, desain ini jadi simbol sikap lo. Tulisan besar “BORN TO DIE” bukan cuma kata-kata ini pernyataan kalau hidup harus dijalani all out, tanpa takut dan tanpa ragu.</p>
+                                                <p>Gaya streetwear bold dengan font graffiti tebal, ditambah splash biru yang bikin desain ini makin nyala dan penuh energi. Mahkota di atas huruf menandakan lo adalah raja di hidup lo sendiri—nggak ada yang bisa ngatur langkah lo.</p>
 
                                                 <!-- Hidden input untuk menyimpan nama artikel dan gambar -->
                                                 <input type="hidden" name="born_to_die" value="true">

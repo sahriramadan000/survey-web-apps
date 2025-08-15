@@ -678,7 +678,11 @@ footer ul li:first-child {
     background: #fff4e3 url(../img/about_bg.svg) no-repeat center bottom;
 }
 .subheader#quote {
-    background: #fff4e3 url(../img/quote_bg.svg) no-repeat center bottom;
+    background: #312602 url(../logo\ velmoir\ no\ bg.png) no-repeat center
+        bottom;
+    height: 300px;
+    background-position: center calc(100% - 5px);
+    background-size: 14rem auto;
 }
 .subheader#services {
     background: #fff4e3 url(../img/services_bg.svg) no-repeat center bottom;
