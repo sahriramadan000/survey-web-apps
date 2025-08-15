@@ -686,7 +686,7 @@ footer ul li:first-child {
 }
 @media (max-width: 768px) {
     .subheader#quote {
-        background-size: 14rem auto !important;
+        background-size: 10rem auto !important;
     }
 }
 .subheader#services {
