@@ -459,7 +459,7 @@
                                     </div><!-- /step 6-->
 
                                     <div class="step">
-                                        <h3 class="main_question"><strong>7/9</strong>Pilih Design Baju dari Category (Street Wear)</h3>
+                                        <h3 class="main_question"><strong>7/9</strong>Pilih Design Baju dari Category (Quots Streetwear)</h3>
 
                                         <div class="row mb-3">
                                             <div class="col-12 col-md-5">
